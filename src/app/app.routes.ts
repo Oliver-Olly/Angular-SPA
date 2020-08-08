@@ -5,7 +5,7 @@ import {HomeComponent} from './components/home/home.component';
 import {AlertComponent} from './components/alert/alert.component';
 import {AboutComponent} from './components/about/about.component';
 import {HeroesComponent} from './components/heroes/heroes.component';
-
+import {HeroeComponent} from './components/heroe/heroe.component';
 
 
 
@@ -14,6 +14,8 @@ const app_routes: Routes = [
   { path: 'alert', component: AlertComponent },
   { path: 'about', component: AboutComponent },
   { path: 'heroes', component: HeroesComponent },
+  { path: 'heroe/:id', component: HeroeComponent },
+
 
   { path: '**', pathMatch: 'full', redirectTo: 'alert' }
 ];
